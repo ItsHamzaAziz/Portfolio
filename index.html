@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Freeman&display=swap" rel="stylesheet">
+    
+    <title>Hamza Aziz - Portfolio</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <h1>Hamza Aziz</h1>
+
+            <ul class="hide-mobile">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <img src="icons/navmenu.png" alt="navmenu" class="nav-menu" onclick="toggleMobileNav()">
+
+            <ul class="show-mobile" id="mobile-nav">
+                <li class="about-show-mobile"><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li class="contact-show-mobile"><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- Home Section -->
+    <section id="home">
+        <img src="me.jpg" alt="image" class="slide-right start-image">
+
+        <div class="inner-home">
+            Hi I'm Hamza Aziz
+            <span class="gradient-text">
+                Full Stack Website Developer
+            </span>
+            
+            <a href="hamzawebresume.pdf" target="_blank" id="get-cv">Get My Resume</a>
+        </div>
+        
+        <img src="me.jpg" alt="image" class="slide-right end-image">
+    </section>
+
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About</h2>
+        <p>
+            I'm a passionate Full Stack Website Developer with a knack for crafting clean, user-friendly, and responsive websites. I leverage my expertise in <span class="gradient-text">Django, HTML, CSS, JavaScript, Tailwind CSS, and Bootstrap</span> to build robust and visually stunning web experiences.
+        </p>
+
+        <p>
+            I believe in the power of design and functionality working hand-in-hand. I utilize UI components from <span class="gradient-text">Tailblocks and Flowbite</span> as well to seamlessly integrate beautiful elements while maintaining a focus on performance and user interaction.
+        </p>
+
+        <p>
+            Besides all of this I have also developed multiple projects such as Recipe Sharing Website and a News Website. They cover or include every full stack aspect from <span class="gradient-text">user authentication to SMTP communication</span>, while also providing a great user interface as well.
+        </p>
+
+        <p>
+            My passion lies in building innovative solutions that cater to specific needs and exceed expectations. Whether you're looking for a fresh website from scratch or a revamp of an existing one, I'm here to collaborate and bring your vision to life.
+        </p>
+
+        <p>
+            Feel free to explore my portfolio and let's connect to discuss your next project!
+        </p>
+    </section>
+
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+
+        <div id="skills-categories">
+
+            <div id="frontend">
+                <h3>Frontend</h3>
+                <div class="inner-skills">
+                    <span id="html">HTML</span>
+                    <span id="css">CSS</span>
+                    <span id="js">JavaScript</span>
+                    <span id="tailwind">Tailwind CSS</span>
+                    <span id="bootstrap">Bootstrap</span>
+                </div>
+            </div>
+            
+            <div id="backend">
+                <h3>Backend</h3>
+                <div class="inner-skills">
+                    <span id="django">Django</span>
+                    <span id="django-rest">Django REST Framework</span>
+                </div>
+            </div>
+            
+            <div id="databases">
+                <h3>Databases</h3>
+                <div class="inner-skills">
+                    <span id="mysql">MySQL</span>
+                    <span id="sql-server">SQL Server</span>
+                    <span id="sqlite">SQLite</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+
+        <div id="inner-projects">
+            <div id="recipe-project">
+                <h3>Recipe Sharing Website</h3>
+                <p>
+                    A recipe sharing website that allows users to share their favorite recipes with the world. Users can create an account and upload, edit or delete their own recipes. Moreover they can also edit their account and save recipes of other users just like they save posts on their social media accounts. 
+                    <br>Besides that users can search different recipes by typing a recipe name. In case they want to filter out recipes, we provide them a dedicated filters page where they can filter recipes based on different types such as cuisine or number of calories.
+                </p>
+                <a href="https://github.com/ItsHamzaAziz/FlavorQuest" target="_blank">Source Code</a>
+            </div>
+            
+            <div class="two-projects">
+                <div id="news-project">
+                    <h3>News Website</h3>
+                    <p>
+                        A news websites which contains news articles from all accross the world that too of different categories such as International News, Business News and many more. Users can also read opinions of renowned intellectuals.
+                        <br>Users can login and register as well and on creating a account they will recive a email which will welcome to this webiste. In addition to this a user can only read an opinion if they are logged in. For this they can directly redirect to login and after logging in to opinion page directly.
+                    </p>
+                    <a href="https://github.com/ItsHamzaAziz/NewsWebsite" target="_blank">Source Code</a>
+                </div>
+    
+                <div id="blogs-project">
+                    <h3>Blogging Website</h3>
+                    <p>
+                        In this blogging website I developed a web application with which users can write blogs in order to share them to the rest of the world. They can also search blogs on any topic. When they read a blog, the name of person who wrote the blog is displayed alongside the date and time of when it was written.
+                        <br>In order to write a blog, this web app asks users to  login. In case they do not have an account they are asked to first sign up and then start their blogging journey on this webiste.
+                    </p>
+                    <a href="https://github.com/ItsHamzaAziz/BloggingWebsite" target="_blank">Source Code</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact</h2>
+
+        <div class="row">
+            <a href="https://www.linkedin.com/in/itshamzaaziz/" target="_blank" class="row-item">
+                <h5>LinkedIn</h5>
+                <img src="icons/linkedin-big-logo.png" alt="linkedin" class="contact-image">
+            </a>
+            <a href="https://www.github.com/ItsHamzaAziz/" target="_blank" class="row-item">
+                <h5>GitHub</h5>
+                <img src="icons/github.png" alt="github" class="contact-image">
+            </a>            
+        </div>
+
+        <div class="row">
+            <a href="mailto:hamzaaziz086@gmail.com" target="_blank" class="row-item">
+                <h5>Email</h5>
+                <img src="icons/gmail.png" alt="linkedin" class="contact-image">
+            </a>            
+            <a href="https://wa.me/923086646421" target="_blank" class="row-item">
+                <h5>WhatsApp</h5>
+                <img src="icons/whatsapp.png" alt="github" class="contact-image">
+            </a>            
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+        </ul>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

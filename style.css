@@ -1,0 +1,538 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    background-color: black;
+    font-family: "Freeman", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    scroll-behavior: smooth;
+}
+
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0px;
+    border-bottom: 1px solid white;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li a {
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.nav-menu, .show-mobile {
+    display: none;
+}
+
+@media screen and (max-width: 580px) {
+    .hide-mobile {
+        display: none;
+    }
+
+    .nav-menu {
+        display: block;
+    }
+
+    .nav-menu {
+        height: 20px;
+    }
+
+    /* .show-mobile {
+        position: absolute;
+        top: 17%;
+        height: 20%;
+        right: 17%;
+
+    } */
+
+    .show-mobile {
+        position: absolute;
+        top: 55px;
+        height: 70px;
+        right: 90px;
+    }
+
+    .show-mobile li {
+        height: 35%;
+        border-left: 1px solid white;
+        border-right: 1px solid white;
+        text-align: center;
+        padding: 12px 20px;
+        
+    }
+
+    .contact-show-mobile {
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-bottom: 1px solid white;
+    }
+
+    .about-show-mobile {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-top: 1px solid white;
+    }
+
+    .show-mobile li a {
+        padding: 0px;
+        border-radius: 10px;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .show-mobile {
+        right: 75px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .show-mobile {
+        right: 55px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .show-mobile {
+        right: 35px;
+    }
+}
+
+
+
+
+/* Home Section */
+#home {
+    display: flex;
+    justify-content: center;
+    padding: 50px 0px;
+}
+
+#home img {
+    width: 30%;
+    height: 450px;
+    border-radius: 50%;
+}
+
+#home div {
+    font-size: 50px;
+}
+
+
+.inner-home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+}
+
+.gradient-text {
+    background: linear-gradient(to right, #1F78CF 0%, #E51714 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#get-cv{
+    background-color: aliceblue;
+    color: black;
+    margin: 20px 0px;
+    font-size: 20px;
+    width: 30%;
+    text-align: center;
+    padding: 10px 0px;
+    text-decoration: none;
+    border-radius: 30px;
+}
+
+@keyframes slideRight {
+    from {
+      transform: translateX(30%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+}
+
+.slide-right {
+    animation: slideRight 1s ease-out;
+}
+
+.start-image {
+    display: none;
+}
+
+
+
+@media screen and (max-width: 1115px) {
+    #home div {
+        font-size: 40px;
+    }
+    #home img {
+        width: 30%;
+        height: 350px;
+        border-radius: 50%;
+    }
+}
+
+@media screen and (max-width: 835px) {
+    #home div {
+        font-size: 30px;
+    }
+    #home img {
+        width: 30%;
+        height: 250px;
+        border-radius: 50%;
+    }
+    #get-cv {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 655px) {
+    .start-image {
+        display: block;
+    }
+    .end-image {
+        display: none;
+    }
+
+    #home img {
+        width: 50%;
+    }
+
+    #home {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #get-cv {
+        width: 100%;
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    #home img {
+        width: 80%;
+    }
+}
+
+
+
+/* About Section */
+#about {
+    padding: 50px 0px;
+}
+
+section h2 {
+    font-size: 40px;
+    text-align: center;
+}
+
+#about p {
+    font-size: 20px;
+    padding: 20px 60px;
+    text-align: center;
+}
+
+@media screen and (max-width: 490px) {
+    #about p {
+        padding: 20px;
+    }
+}
+
+
+
+/* Skills Section */
+#skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0px;
+}
+
+#skills-categories {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    display: inline-flex;
+}
+
+#frontend, #backend, #databases {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.inner-skills {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+}
+
+.inner-skills span {
+    margin: 10px 20px 10px 0px;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+#html {
+    background-color: #cc0000;
+}
+
+#css {
+    background-color: #0000b3;
+}
+
+#js {
+    background-color: #808000;
+}
+
+#tailwind {
+    background-color: #000080;
+}
+
+#bootstrap {
+    background-color: #b800e6;
+}
+
+#django {
+    background-color: #006600;
+}
+
+#django-rest {
+    background-color: #990000;
+}
+
+#mysql {
+    background-color: #0000ff;
+}
+
+#sql-server {
+    background-color: #990033;
+}
+
+#sqlite {
+    background-color: #000099;
+}
+
+
+@media screen and (max-width: 650px) {
+    #skills {
+        padding: 50px 20px;
+    }
+}
+
+
+
+/* Projects Section */
+#projects {
+    padding: 50px;
+}
+
+.two-projects {
+    display: flex;
+}
+
+#recipe-project {
+    padding: 20px 40px;
+    padding-bottom: 30px;
+    margin: 20px 0px;
+    border-radius: 10px;
+    background: rgb(253,29,29);
+    background: linear-gradient(90deg, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+}
+
+#recipe-project > * {
+    background-color: transparent;
+}
+
+#recipe-project > p {
+    margin-bottom: 20px;
+}
+
+#recipe-project > a {
+    background-color: white;
+    color: black;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+#news-project, #blogs-project {
+    width: 50%;
+}
+
+#news-project {
+    padding: 20px 40px;
+    padding-bottom: 30px;
+    margin: 0px 10px 0px 0px;
+    border-radius: 10px;
+    background: rgb(20,36,199);
+    background: linear-gradient(90deg, rgba(20,36,199,1) 0%, rgba(113,30,214,0.9080882352941176) 100%)
+}
+
+#news-project > h3, #news-project > p {
+    background-color: transparent;
+}
+
+#news-project > p {
+    margin-bottom: 20px;
+}
+
+#news-project > a {
+    background-color: white;
+    color: black;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+#blogs-project {
+    padding: 20px 40px;
+    padding-bottom: 30px;
+    margin: 0px 0px 0px 10px;
+    border-radius: 10px;
+    background: rgb(125,129,171);
+    background: linear-gradient(90deg, rgba(125,129,171,1) 0%, rgba(37,25,52,0.9080882352941176) 100%);
+}
+
+#blogs-project > h3, #blogs-project > p {
+    background-color: transparent;
+}
+
+#blogs-project > p {
+    margin-bottom: 20px;
+}
+
+#blogs-project > a {
+    background-color: white;
+    color: black;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    .two-projects {
+        flex-direction: column;
+    }
+
+    #news-project {
+        margin: 20px 0px;
+        width: auto;
+    }
+
+    #blogs-project {
+        margin: 20px 0px;
+        width: auto;
+    }
+}
+
+@media screen and (max-width:450px) {
+    #inner-projects h3 {
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    #recipe-project, #blogs-project, #news-project {
+        padding: 20px;
+    }
+    #projects {
+        padding: 50px 20px;
+    }
+}
+
+
+
+/* Contact Section */
+#contact {
+    padding: 50px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.row-item {
+    display: block;
+    text-decoration: none;
+    background: rgb(196,200,242);
+    background: linear-gradient(90deg, rgba(196,200,242,1) 0%, rgba(148,133,167,0.9080882352941176) 100%);
+    display: flex;
+    align-items: center;
+    width: 30%;
+    justify-content: center;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.row-item > * {
+    background-color: transparent;
+    color: black;
+    padding: 0px 10px;
+}
+
+.row-item > h5 {
+    font-size: 20px;
+}
+
+.contact-image {
+    width: 60px;
+    height: 60px;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+    .row-item {
+        width: 80%;
+    }
+}
+
+
+
+/* Footer */
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid white;
+    font-size: 20px;
+}
+
+footer ul li {
+    padding: 40px 10px;
+    color: white;
+}
+
+li a {
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
